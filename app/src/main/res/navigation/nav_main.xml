@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_main"
+    app:startDestination="@id/mainFragment">
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.midea.cabinet.ui.fragment.MainFragment"
+        android:label="mainFragment"
+        tools:layout="@layout/fragment_main">
+        <action
+            android:id="@+id/action_mainFragment_to_doorOpenSuccessFragment"
+            app:destination="@id/doorOpenSuccessFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_doorOpenFailFragment"
+            app:destination="@id/doorOpenFailFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_noCabinetBindImeiFragment"
+            app:destination="@id/noCabinetBindImeiFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/doorOpenSuccessFragment"
+        android:name="com.midea.cabinet.ui.fragment.DoorOpenSuccessFragment"
+        android:label="doorOpenSuccessFragment"
+        tools:layout="@layout/fragment_door_open_success"></fragment>
+
+    <fragment
+        android:id="@+id/doorOpenFailFragment"
+        android:name="com.midea.cabinet.ui.fragment.DoorOpenFailFragment"
+        android:label="doorOpenFailFragment"
+        tools:layout="@layout/fragment_door_open_fail"></fragment>
+
+    <fragment
+        android:id="@+id/noCabinetBindImeiFragment"
+        android:name="com.midea.cabinet.ui.fragment.NoCabinetBindImeiFragment"
+        android:label="noCabinetBindImeiFragment"
+        tools:layout="@layout/fragment_no_cabinet_bind_imei"></fragment>
+
+
+</navigation>

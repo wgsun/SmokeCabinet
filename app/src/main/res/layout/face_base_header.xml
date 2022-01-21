@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x90">
+
+        <FrameLayout
+            android:id="@+id/fl_signal"
+            android:layout_width="@dimen/x50"
+            android:layout_height="@dimen/x35"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/x12"
+            android:layout_marginLeft="@dimen/x27">
+
+            <ImageView
+                android:id="@+id/iv_signal"
+                android:layout_width="@dimen/x50"
+                android:layout_height="@dimen/x35"
+                android:layout_marginLeft="@dimen/x5"
+                android:src="@mipmap/signal_0" />
+
+            <ImageView
+                android:id="@+id/iv_signal_type"
+                android:layout_width="@dimen/x15"
+                android:layout_height="@dimen/x12"
+                android:layout_marginLeft="@dimen/x8"
+                android:layout_marginTop="@dimen/x3"
+                android:src="@mipmap/signal_4g" />
+
+            <ImageView
+                android:id="@+id/iv_signal_net"
+                android:layout_width="@dimen/x7"
+                android:layout_height="@dimen/x12"
+                android:layout_marginLeft="@dimen/x25"
+                android:layout_marginTop="@dimen/x3"
+                android:src="@mipmap/signal_both" />
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/tvTime"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:gravity="center_vertical"
+            android:textColor="#FFFFFF"
+            android:textSize="@dimen/x28"
+            tools:text="16:46:00" />
+
+
+        <TextView
+            android:id="@+id/tvDayTime"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="@dimen/x18"
+            android:layout_toLeftOf="@+id/tvWeekDay"
+            android:gravity="center_vertical"
+            android:textColor="#FFFFFF"
+            android:textSize="@dimen/x24"
+            tools:text="2021-07-21" />
+
+        <TextView
+            android:id="@+id/tvWeekDay"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="@dimen/x13"
+            android:layout_toLeftOf="@+id/imageSpot"
+            android:gravity="center_vertical"
+            android:text="星期日"
+            android:textColor="#FFFFFF"
+            android:textSize="@dimen/x24"
+            android:tooltipText="16:46:00" />
+
+        <ImageView
+            android:id="@+id/imageSpot"
+            android:layout_width="@dimen/x5"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/x13"
+            android:visibility="invisible" />
+
+    </RelativeLayout>
+
+</LinearLayout>

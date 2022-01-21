@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x658"
+            android:background="#0068FF" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x58"
+            android:layout_marginTop="@dimen/x117"
+            android:text="智能零售,便利生活"
+            android:textColor="#FFFFFF"
+            android:textSize="@dimen/x50" />
+
+        <ImageView
+            android:layout_width="@dimen/x756"
+            android:layout_height="@dimen/x682"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/x232"
+            android:src="@mipmap/bg_smoking" />
+
+        <include
+            android:id="@+id/header"
+            layout="@layout/face_base_header" />
+
+        <View
+            android:id="@+id/noCabinetBind"
+            android:layout_width="@dimen/x100"
+            android:layout_height="@dimen/x90" />
+
+
+    </FrameLayout>
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="@dimen/x36">
+
+        <ImageView
+            android:id="@+id/iv_face_open"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x318"
+            android:scaleType="fitXY"
+            android:src="@mipmap/bg_face_door_btn" />
+
+        <LinearLayout
+            android:id="@+id/llFace"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x120"
+            android:layout_marginLeft="@dimen/x58"
+            android:layout_marginTop="@dimen/x27"
+            android:layout_marginRight="@dimen/x58"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/x63"
+                android:layout_height="@dimen/x63"
+                android:scaleType="fitXY"
+                android:src="@mipmap/ic_default_face" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/x24"
+                android:text="刷脸开门"
+                android:textColor="#FFFFFF"
+                android:textSize="@dimen/x50" />
+
+        </LinearLayout>
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/tvDeviceTempCode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/x26"
+        android:textColor="#C2C2C2"
+        android:textSize="@dimen/x24"
+        tools:text="设备号:87987657890987654678" />
+
+</RelativeLayout>
+<!--
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data></data>
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFFFFF"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x658"
+                android:background="#0068FF" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/x58"
+                android:layout_marginTop="@dimen/x117"
+                android:text="智能零售,便利生活"
+                android:textColor="#FFFFFF"
+                android:textSize="@dimen/x50" />
+
+            <ImageView
+                android:layout_width="@dimen/x756"
+                android:layout_height="@dimen/x682"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/x232"
+                android:src="@mipmap/bg_smoking" />
+
+            <include
+                android:id="@+id/header"
+                layout="@layout/face_base_header" />
+
+
+        </FrameLayout>
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="@dimen/x36">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x318"
+                android:scaleType="fitXY"
+                android:src="@mipmap/bg_face_door_btn" />
+
+            <LinearLayout
+                android:id="@+id/llWeChatFace"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x120"
+                android:layout_marginLeft="@dimen/x58"
+                android:layout_marginTop="@dimen/x27"
+                android:layout_marginRight="@dimen/x58"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/x63"
+                    android:layout_height="@dimen/x63"
+                    android:scaleType="fitXY"
+                    android:src="@mipmap/ic_default_face" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/x24"
+                    android:text="刷脸开门"
+                    android:textColor="#FFFFFF"
+                    android:textSize="@dimen/x50" />
+
+            </LinearLayout>
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/tvDeviceTempCode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/x26"
+            android:textColor="#C2C2C2"
+            android:textSize="@dimen/x24"
+            tools:text="设备号:87987657890987654678" />
+
+    </RelativeLayout>
+</layout>-->

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/main_bg"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/header"
+        layout="@layout/face_base_header" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/x58"
+        android:layout_marginTop="@dimen/x27"
+        android:text="智能零售,便利生活"
+        android:textColor="#FFFFFF"
+        android:textSize="@dimen/x50" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/x50"
+        android:layout_marginTop="@dimen/x62"
+        android:layout_marginRight="@dimen/x50"
+        android:layout_marginBottom="@dimen/x51"
+        android:background="@drawable/bg_blue_stroke_13_with_white_fill"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="@dimen/x194"
+            android:layout_height="@dimen/x194"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/x180"
+            android:background="@mipmap/eighteen_year"
+            android:scaleType="fitXY" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/x34"
+            android:text="温馨提示"
+            android:textColor="#EE3937"
+            android:textSize="@dimen/x48"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/x34"
+            android:text="未成年人禁止吸烟"
+            android:textColor="#EE3937"
+            android:textSize="@dimen/x48" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+
+        <TextView
+            android:id="@+id/tvReturnMediaLauncher"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:gravity="center_horizontal"
+            android:paddingTop="@dimen/x20"
+            android:paddingBottom="@dimen/x55"
+            android:text="返回首页5s"
+            android:textColor="#0068FF"
+            android:textSize="@dimen/x26" />
+    </LinearLayout>
+
+
+</LinearLayout>
